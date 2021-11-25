@@ -1,0 +1,82 @@
+.border {
+  padding: 20px;
+  width: 100%;
+  min-height: 900px;
+  max-height: 1000px;
+  height: 95vh;
+  position: relative;
+}
+
+.backgroundDark {
+  background-color: #252525;
+  color: #faf6ef;
+  height: 80%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mainText {
+  font-size: 48px;
+  line-height: 1.4;
+  padding-left: 110px;
+  margin-top: -40px;
+}
+
+.mainText p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.largeText {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.boldText {
+  font-weight: 800;
+}
+
+.image {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  z-index: 1;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  right: 30px;
+  bottom: -30px;
+  background-color: #f2efea;
+  z-index: -1;
+}
+
+.bingoBangoText {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  left: -6.5px;
+  transform: translateY(50%);
+  right: 0;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.bingoBangoText p {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.bingoDark {
+  color: #252525;
+}
