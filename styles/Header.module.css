@@ -70,7 +70,7 @@
 }
 
 .bingoBangoText p {
-  display: inline;
+  display: inline-block;
   text-transform: uppercase;
   font-weight: 900;
   margin: 0;
