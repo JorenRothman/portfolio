@@ -1,0 +1,10 @@
+.title {
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  bottom: 65px;
+  left: -200px;
+  z-index: 2;
+}

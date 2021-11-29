@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Image from "next/image";
 import type { NextPage } from "next";
+import Work from "../components/Work";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -22,28 +23,34 @@ const Home: NextPage = () => {
             className={styles.navLink}
             href="#top"
             onHoverStart={async (event) => {
-              controls.start({
-                y: -95,
-              });
+              controls.start(
+                {
+                  y: -95,
+                },
+                { duration: 0.2 }
+              );
 
-              controls.start({ x: 0 });
+              controls.start({ x: 0 }, { duration: 0.2 });
             }}
             onHoverEnd={(event) => {
-              controls.start({ x: "70%" });
+              controls.start({ x: "70%" }, { duration: 0.2 });
             }}
           >
             Top
           </motion.a>
           <motion.a
             onHoverStart={async (event) => {
-              controls.start({
-                y: -61,
-              });
+              controls.start(
+                {
+                  y: -61,
+                },
+                { duration: 0.2 }
+              );
 
-              controls.start({ x: 0 });
+              controls.start({ x: 0 }, { duration: 0.2 });
             }}
             onHoverEnd={(event) => {
-              controls.start({ x: "70%" });
+              controls.start({ x: "70%" }, { duration: 0.2 });
             }}
             className={styles.navLink}
             href="#work"
@@ -52,14 +59,17 @@ const Home: NextPage = () => {
           </motion.a>
           <motion.a
             onHoverStart={async (event) => {
-              controls.start({
-                y: -22,
-              });
+              controls.start(
+                {
+                  y: -22,
+                },
+                { duration: 0.2 }
+              );
 
-              controls.start({ x: 0 });
+              controls.start({ x: 0 }, { duration: 0.2 });
             }}
             onHoverEnd={(event) => {
-              controls.start({ x: "70%" });
+              controls.start({ x: "70%" }, { duration: 0.2 });
             }}
             className={styles.navLink}
             href="#contact"
@@ -107,6 +117,7 @@ const Home: NextPage = () => {
 
       <main className={styles.container}>
         <Header></Header>
+        <Work></Work>
       </main>
 
       <footer></footer>
